@@ -1,0 +1,35 @@
+# Health Care Data Analytics
+
+## About
+This project uses a healthcare dataset (`healthcare (1).xlsx`) with customer medical and hospitalisation details. It is used for data analysis in Excel.
+
+## Dataset
+The workbook has 3 sheets, linked by `Customer ID`:
+
+| Sheet | Rows | Description |
+|---|---|---|
+| Customer Names | 2,335 | Customer ID and name |
+| Medical Examinations | 2,335 | BMI, HbA1c, heart issues, transplants, cancer history, major surgeries, smoker status |
+| Hospitalisation Details | 2,343 | Date, children, hospital charges, hospital tier, city tier, state ID |
+
+## Key Columns
+- **BMI**: body mass index (15.01 to 55.05)
+- **HBA1C**: blood sugar measure (4.00 to 12.00)
+- **charges**: hospital charges (563.84 to 63,770.43)
+- **Hospital tier / City tier**: tier - 1, tier - 2, tier - 3
+- **State ID**: 16 states (R1011 to R1026)
+
+## Data Quality Notes
+- Missing values are stored as `?` instead of blanks.
+- 8 hospitalisation rows do not match any customer ID.
+- `NumberOfMajorSurgeries` mixes numbers with the text "No major surgery".
+- Yes/No values use inconsistent capitalisation (`yes`, `Yes`, `No`).
+
+## How to Use
+1. Download `healthcare (1).xlsx`.
+2. Open it in Excel.
+3. Clean the data (replace `?`, fix IDs, standardise Yes/No).
+4. Join the sheets using `Customer ID` and analyse.
+
+## Privacy
+This dataset contains names and health information. Handle it as sensitive data.
